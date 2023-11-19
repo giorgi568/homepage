@@ -3,6 +3,7 @@ body{
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   width: 100vw;
+  overflow-x: hidden;
 }
 
 .about_section{
@@ -12,16 +13,23 @@ body{
   align-items: center;
   flex-direction: row;
   background: linear-gradient(177deg, rgb(45, 39, 212) 75%, rgba(0,212,255,0) 76%);
-
 }
-.profile_img{
+.img_wrapper{
+  background-image: url(/img/profile2.png);
+  background-position: center;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 25vw;
   height: 25vw;
   min-width: 300px;
   min-height: 300px;
+  box-shadow: 5px 5px 100px 2px rgba(0,0,0,.8);
 }
 .about_wrapper{
   display: flex;
+  /* flex-direction: column; */
   align-items: center;
   margin-top: 20px;
 }
@@ -38,6 +46,7 @@ h1{
   background-color: white;
   display: flex;
   flex-direction: column;
+  box-shadow: 5px 5px 100px 2px rgba(0,0,0,.8);
 }
 .icon{
   height: 30px;
@@ -45,9 +54,7 @@ h1{
 }
 p{
   color: grey;
-}
-.profile_img, .about_box{
-  box-shadow: 5px 5px 100px 2px rgba(0,0,0,.8);
+  text-align: justify;
 }
 .logos{
   align-self: flex-end;
@@ -62,4 +69,32 @@ p{
   width: 25vw;
   text-align: center;
   font-size: 3vw;
+}
+.mywork_section{
+  width: 100vw;
+  margin-top: 50px;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 50px;
+  /* margin-left: 50px; */
+}
+header{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+}
+.project{
+  width: 300px;
+  height: 350px;
+  border: 1px solid black;
+}
+.list_of_work{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
 }
