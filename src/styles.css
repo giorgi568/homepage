@@ -145,3 +145,41 @@ h3{
 .tictactoe{
   background-image: url(/img/screenshots/tictactoe.PNG);
 }
+
+.contactme_section{
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  background-color: rgb(45, 39, 212);
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+.phone, .email{
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 10px;
+}
+h4, .message{
+  margin: 0;
+  color: white;
+  font-size: 2vw;
+}
+.contact_me{
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.footer_logos{
+  align-self: flex-start;
+}
+.footer_photo{
+  width: 30vw;
+  height: 25vw;
+  min-width: 300px;
+  min-height: 250px;
+  background-image: url(/img/profile.jpg);
+}
+
